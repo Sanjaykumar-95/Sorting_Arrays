@@ -2,7 +2,7 @@ import java.util.*;
 
 class Sorting {
 
-    //Bubble Sort
+    //Bubble Sort O(n^2)
     public static int[] BubbleSort(int ar[],int n){
         if(n==0) return ar;
         for(int i=0;i<n;i++){
@@ -17,7 +17,7 @@ class Sorting {
         return ar;
     }
 
-    //Selection Sort
+    //Selection Sort O(n^2)
     public static int[] SelectionSort(int ar[],int n){
         if(n==0) return ar;
 
@@ -33,7 +33,7 @@ class Sorting {
         return ar;
     }
 
-    //Insertion Sort
+    //Insertion Sort O(n^2)
     public static int[] InsertionSort(int ar[],int n){
         if(n==0) return ar;
 
@@ -49,7 +49,7 @@ class Sorting {
         return ar;
     }
 
-    //Quick Sort
+    //Quick Sort O(nlog(n))
     public static void QuickSort(int ar[],int low,int high){
         if(low<high){
             int pi=Partition(ar,low,high);
@@ -78,8 +78,7 @@ class Sorting {
 
 
 
-    //*** Merge Sort
-
+    //*** Merge Sort O(nlong(n))
     public static void MergeSort(int ar[],int l,int r){
         if(l<r){
             int mid=(l+r)/2;
